@@ -219,11 +219,4 @@ return {
       require("telescope").load_extension("file_browser")
     end,
   },
-  {
-    -- Emmet Nvim
-    "olrtg/nvim-emmet",
-    config = function()
-      vim.keymap.set({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation)
-    end,
-  },
 }

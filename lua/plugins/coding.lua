@@ -14,13 +14,6 @@ return {
     opts = { snippet_engine = "luasnip" },
   },
 
-  -- Emmet
-  {
-    "olrtg/nvim-emmet",
-    config = function()
-      vim.keymap.set({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation)
-    end,
-  },
   -- Incremental rename
   {
     "smjonas/inc-rename.nvim",
